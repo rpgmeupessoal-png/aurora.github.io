@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aurora TV Media</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <a class="logo" href="index.html">
+    <img src="assets/img/logo.png" alt="Aurora">
+    <span>AURORA</span>
+  </a>
+
+  <nav>
+    <a class="active"><i class="fas fa-home"></i> Início</a>
+    <a href="live.html"><i class="fas fa-broadcast-tower"></i> Live</a>
+    <a href="charts.html"><i class="fas fa-chart-line"></i> Charts</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Aurora TV</h1>
+    <p>Streaming, música e entretenimento em tempo real.</p>
+    <a href="live.html" class="btn-primary">
+      <i class="fas fa-play"></i> Assistir agora
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2><i class="fas fa-fire"></i> Em alta</h2>
+
+  <div class="carousel">
+    <article class="card modal-trigger" data-title="Saturday Night Live">
+      <div class="thumb" style="background-image:url('https://img.nbc.com/files/2025-10/snl_51-logo-1920x1080.jpg')"></div>
+      <div class="card-body">
+        <strong>Saturday Night Live</strong>
+        <span>Comédia • Ao vivo</span>
+      </div>
+    </article>
+
+    <article class="card modal-trigger" data-title="The Voice">
+      <div class="thumb" style="background-image:url('https://writerspace.com/wp-content/uploads/2014/10/The-Voice-Logo-Wallpaper.jpg')"></div>
+      <div class="card-body">
+        <strong>The Voice</strong>
+        <span>Talent Show</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2><i class="fas fa-broadcast-tower"></i> Ao vivo agora</h2>
+
+  <div class="carousel">
+    <a href="live.html" class="card">
+      <div class="thumb" style="background-image:url('https://wp.cghnyc.com/media/NBC-w-Graphic_new2-1410x940.jpg')"></div>
+      <div class="card-body">
+        <span class="live-badge">AO VIVO</span>
+        <strong>Aurora Live</strong>
+        <span>Canal principal</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>
+    <h4>Aurora TV Media</h4>
+    <p>Plataforma independente de mídia.</p>
+  </div>
+
+  <div>
+    <h4>Social</h4>
+    <div class="social">
+      <a><i class="fab fa-twitter"></i></a>
+      <a><i class="fab fa-instagram"></i></a>
+      <a><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <h3>Em breve</h3>
+    <p id="modalText"></p>
+    <button id="closeModal">Fechar</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
